@@ -1,0 +1,12 @@
+streamlit
+streamlit_autorefresh
+langgraph
+langchain
+langchain_aws
+langchain_chroma
+langchain_community
+langchain_openai
+faiss-cpu
+huggingface_hub
+pymupdf
+boto3

@@ -1,0 +1,49 @@
+[
+  {
+    "pk": "SITE#OCTANK-1#CAM#2F-04",
+    "sk": "EVT#2025-07-22T01:58:46Z#ID#559293",
+    "eventId": "559293",
+    "siteId": "OCTANK-1",
+    "deviceId": "2F-04",
+    "ts": "2025-07-22T01:58:46Z",
+    "eventType": "DANGER_ZONE_INTRUSION",
+    "severity": "LOW",
+    "message": "A entered the SECURITY-CHECK-POINT danger-zone polygon.",
+    "roiId": "SECURITY-CHECK-POINT",
+    "model": {
+      "name": "yolov8n",
+      "ver": "1.3.2",
+      "conf": 0.82
+    },
+    "image": {
+      "required": true,
+      "s3Key": "data_source/anomaly_images_s3/DANGER_ZONE_INTRUSION.png"
+    },
+    "status": "ACTIVATE",
+    "createdAt": "2025-07-29T01:34:52.670864+00:00"
+  },
+  {
+    "pk": "SITE#OCTANK-1#CAM#1F-03",
+    "sk": "EVT#2025-07-23T08:23:08Z#ID#530739",
+    "eventId": "530739",
+    "siteId": "OCTANK-1",
+    "deviceId": "1F-03",
+    "ts": "2025-07-23T08:23:08Z",
+    "eventType": "FIRE_ALERT",
+    "severity": "MEDIUM",
+    "message": "Fire alert triggered at Loading Bay.",
+    "roiId": "SECURITY-CHECK-POINT",
+    "model": {
+      "name": "yolov8n",
+      "ver": "1.3.2",
+      "conf": 0.82
+    },
+    "image": {
+      "required": true,
+      "s3Key": "data_source/anomaly_images_s3/FIRE_ALERT.png"
+    },
+    "status": "ACTIVATE",
+    "createdAt": "2025-07-29T20:55:21.845382+00:00",
+    "ragAdvisor": "Based on the given context and the event details provided, here's a concise answer to how to respond to this fire alert:\n\n1. Immediate Alarm Activation: The fire alert has been triggered automatically at the Loading Bay. However, if not already done, someone should activate the nearest manual fire alarm pull-station to ensure everyone in the facility is alerted.\n\n2. Evacuation: Begin immediate evacuation of the Loading Bay and surrounding areas. Use the nearest safe exit routes, avoiding elevators. Instruct people to stay low if there's smoke and move to the designated assembly point.\n\n3. Call Fire Department and Internal ERT: The Control Room should confirm the call to the fire brigade, providing details about the fire in the Loading Bay. Activate the plant Emergency Response Team as well.\n\n4. Initial Assessment: If trained personnel are present and the fire is clearly small, they may attempt to use a fire extinguisher after the alarm has been raised. However, this should only be done if it's safe and there's a clear exit path.\n\n5. Incident Command Post: The Plant Incident Commander should set up a command post in a safe location to coordinate the response.\n\n6. Accounting for Personnel: At the assembly point, perform a headcount to account for all employees who were in the affected area.\n\n7. Assist Fire Department: When firefighters arrive, provide them with information about the Loading Bay layout, any hazardous materials present, and any missing persons.\n\n8. Prevent Re-entry: Ensure no one re-enters the building until it's declared safe by the fire department.\n\n9. Incident Reporting: Once safe, all involved should complete an incident report detailing what happened and the actions taken.\n\nThe reasoning behind this response is based on the provided safety guidance for fire alerts, which emphasizes immediate evacuation as the primary way to protect employees. The response prioritizes life safety through quick alarm activation, evacuation, and professional firefighter involvement, while also allowing for potential small-fire control by trained personnel if safe to do so."
+  }
+]
