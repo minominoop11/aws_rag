@@ -83,10 +83,15 @@ def generate_answer(state: State) -> Dict[str, Any]:
     query = state["input"]
 
     system_msg = (
-        "Here is pieces of context, contained in <context> tags. "
-        "Provide a concise answer to the question at the end. "
-        "Explain clearly the reasoning. "
-        "If you don't know the answer, just say so."
+        "You will be given a question."
+        "When answering, follow these rules:"
+        "1. Provide a concise answer."
+        "2. Explain your reasoning clearly."
+        "3. If you don’t know the answer, simply say so. "
+        "Present your response in exactly three labeled sections:"
+        "• Risk Level "
+        "• Safety Measures "
+        "• Work Procedure  "
     )
     human_msg = "Reference texts:\n{context}\n\nQuestion: {input}"
     prompt = _build_prompt(system_msg, human_msg)
